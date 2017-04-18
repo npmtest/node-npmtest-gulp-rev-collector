@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-gulp-rev-collector/gulp-rev-collector/index.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-gulp-rev-collector/node_modules/gulp-rev-collector/index.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-gulp-rev-collector">npmtest-gulp-rev-collector (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-gulp-rev-collector/gulp-rev-collector/index.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-gulp-rev-collector/node_modules/gulp-rev-collector/index.js</span></h1>
     <h2>
         
         Statements: <span class="metric">17.39% <small>(12 / 69)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-gulp-rev-collector/gulp-rev-collector/</a> &#187; index.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-gulp-rev-collector/node_modules/gulp-rev-collector/</a> » index.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -517,74 +515,74 @@ var defaults = {
     revSuffix: '-[0-9a-f]{8,10}-?'
 };
 &nbsp;
-<span class="fstat-no" title="function not covered" >function _getManifestData(file, opts) {</span>
-<span class="cstat-no" title="statement not covered" >    var data;</span>
-<span class="cstat-no" title="statement not covered" >    var ext = path.extname(file.path);</span>
-<span class="cstat-no" title="statement not covered" >    if (ext === '.json') {</span>
-<span class="cstat-no" title="statement not covered" >        var json = {};</span>
-<span class="cstat-no" title="statement not covered" >        try {</span>
-<span class="cstat-no" title="statement not covered" >            var content = file.contents.toString('utf8');</span>
-<span class="cstat-no" title="statement not covered" >            if (content) {</span>
-<span class="cstat-no" title="statement not covered" >                json = JSON.parse(content);</span>
+<span class="fstat-no" title="function not covered">function _getManifestData(file, opts) {</span>
+<span class="cstat-no" title="statement not covered">    var data;</span>
+<span class="cstat-no" title="statement not covered">    var ext = path.extname(file.path);</span>
+<span class="cstat-no" title="statement not covered">    if (ext === '.json') {</span>
+<span class="cstat-no" title="statement not covered">        var json = {};</span>
+<span class="cstat-no" title="statement not covered">        try {</span>
+<span class="cstat-no" title="statement not covered">            var content = file.contents.toString('utf8');</span>
+<span class="cstat-no" title="statement not covered">            if (content) {</span>
+<span class="cstat-no" title="statement not covered">                json = JSON.parse(content);</span>
             }
         } catch (x) {
-<span class="cstat-no" title="statement not covered" >            this.emit('error', new PluginError(PLUGIN_NAME,  x));</span>
-<span class="cstat-no" title="statement not covered" >            return;</span>
+<span class="cstat-no" title="statement not covered">            this.emit('error', new PluginError(PLUGIN_NAME,  x));</span>
+<span class="cstat-no" title="statement not covered">            return;</span>
         }
-<span class="cstat-no" title="statement not covered" >        if (_.isObject(json)) {</span>
-<span class="cstat-no" title="statement not covered" >            var isRev = 1;</span>
-<span class="cstat-no" title="statement not covered" >            Object.keys(json).forEach(<span class="fstat-no" title="function not covered" >function (key) {</span></span>
-<span class="cstat-no" title="statement not covered" >                if ( !_.isString(json[key]) || path.basename(json[key]).replace(new RegExp( opts.revSuffix ), '' ) !==  path.basename(key) ) {</span>
-<span class="cstat-no" title="statement not covered" >                    isRev = 0;</span>
+<span class="cstat-no" title="statement not covered">        if (_.isObject(json)) {</span>
+<span class="cstat-no" title="statement not covered">            var isRev = 1;</span>
+<span class="cstat-no" title="statement not covered">            Object.keys(json).forEach(<span class="fstat-no" title="function not covered">function (key) {</span></span>
+<span class="cstat-no" title="statement not covered">                if ( !_.isString(json[key]) || path.basename(json[key]).replace(new RegExp( opts.revSuffix ), '' ) !==  path.basename(key) ) {</span>
+<span class="cstat-no" title="statement not covered">                    isRev = 0;</span>
                 }
             });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >            if (isRev) {</span>
-<span class="cstat-no" title="statement not covered" >                data = json;</span>
+<span class="cstat-no" title="statement not covered">            if (isRev) {</span>
+<span class="cstat-no" title="statement not covered">                data = json;</span>
             }
         }
 &nbsp;
     }
-<span class="cstat-no" title="statement not covered" >    return data;</span>
+<span class="cstat-no" title="statement not covered">    return data;</span>
 }
 &nbsp;
-<span class="fstat-no" title="function not covered" >function escPathPattern(pattern) {</span>
-<span class="cstat-no" title="statement not covered" >    return pattern.replace(/[\-\[\]\{\}\(\)\*\+\?\.\^\$\|\/\\]/g, "\\$&amp;");</span>
+<span class="fstat-no" title="function not covered">function escPathPattern(pattern) {</span>
+<span class="cstat-no" title="statement not covered">    return pattern.replace(/[\-\[\]\{\}\(\)\*\+\?\.\^\$\|\/\\]/g, "\\$&amp;");</span>
 }
 &nbsp;
-<span class="fstat-no" title="function not covered" >function closeDirBySep(dirname) {</span>
-<span class="cstat-no" title="statement not covered" >    return dirname + (!dirname || new RegExp( escPathPattern('/') + '$' ).test(dirname) ? '' : '/');</span>
+<span class="fstat-no" title="function not covered">function closeDirBySep(dirname) {</span>
+<span class="cstat-no" title="statement not covered">    return dirname + (!dirname || new RegExp( escPathPattern('/') + '$' ).test(dirname) ? '' : '/');</span>
 }
 &nbsp;
-<span class="fstat-no" title="function not covered" >function revCollector(opts) {</span>
-<span class="cstat-no" title="statement not covered" >    opts = _.defaults((opts || {}), defaults);</span>
+<span class="fstat-no" title="function not covered">function revCollector(opts) {</span>
+<span class="cstat-no" title="statement not covered">    opts = _.defaults((opts || {}), defaults);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var manifest  = {};</span>
-<span class="cstat-no" title="statement not covered" >    var mutables = [];</span>
-<span class="cstat-no" title="statement not covered" >    return through.obj(<span class="fstat-no" title="function not covered" >function (file, enc, cb) {</span></span>
-<span class="cstat-no" title="statement not covered" >        if (!file.isNull()) {</span>
-<span class="cstat-no" title="statement not covered" >            var mData = _getManifestData.call(this, file, opts);</span>
-<span class="cstat-no" title="statement not covered" >            if (mData) {</span>
-<span class="cstat-no" title="statement not covered" >                _.extend( manifest, mData );</span>
+<span class="cstat-no" title="statement not covered">    var manifest  = {};</span>
+<span class="cstat-no" title="statement not covered">    var mutables = [];</span>
+<span class="cstat-no" title="statement not covered">    return through.obj(<span class="fstat-no" title="function not covered">function (file, enc, cb) {</span></span>
+<span class="cstat-no" title="statement not covered">        if (!file.isNull()) {</span>
+<span class="cstat-no" title="statement not covered">            var mData = _getManifestData.call(this, file, opts);</span>
+<span class="cstat-no" title="statement not covered">            if (mData) {</span>
+<span class="cstat-no" title="statement not covered">                _.extend( manifest, mData );</span>
             } else {
-<span class="cstat-no" title="statement not covered" >                mutables.push(file);</span>
+<span class="cstat-no" title="statement not covered">                mutables.push(file);</span>
             }
         }
-<span class="cstat-no" title="statement not covered" >        cb();</span>
-    }, <span class="fstat-no" title="function not covered" >function (cb) {</span>
-<span class="cstat-no" title="statement not covered" >        var changes = [];</span>
-<span class="cstat-no" title="statement not covered" >        var dirReplacements = [];</span>
-<span class="cstat-no" title="statement not covered" >        if ( _.isObject(opts.dirReplacements) ) {</span>
-<span class="cstat-no" title="statement not covered" >            Object.keys(opts.dirReplacements).forEach(<span class="fstat-no" title="function not covered" >function (srcDirname) {</span></span>
-<span class="cstat-no" title="statement not covered" >                dirReplacements.push({</span>
+<span class="cstat-no" title="statement not covered">        cb();</span>
+    }, <span class="fstat-no" title="function not covered">function (cb) {</span>
+<span class="cstat-no" title="statement not covered">        var changes = [];</span>
+<span class="cstat-no" title="statement not covered">        var dirReplacements = [];</span>
+<span class="cstat-no" title="statement not covered">        if ( _.isObject(opts.dirReplacements) ) {</span>
+<span class="cstat-no" title="statement not covered">            Object.keys(opts.dirReplacements).forEach(<span class="fstat-no" title="function not covered">function (srcDirname) {</span></span>
+<span class="cstat-no" title="statement not covered">                dirReplacements.push({</span>
                     dirRX:  escPathPattern( closeDirBySep(srcDirname) ),
                     dirRpl: opts.dirReplacements[srcDirname]
                 });
             });
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if (opts.collectedManifest) {</span>
-<span class="cstat-no" title="statement not covered" >            this.push(</span>
+<span class="cstat-no" title="statement not covered">        if (opts.collectedManifest) {</span>
+<span class="cstat-no" title="statement not covered">            this.push(</span>
                 new gutil.File({
                     path: opts.collectedManifest,
                     contents: new Buffer(JSON.stringify(manifest, null, "\t"))
@@ -592,19 +590,19 @@ var defaults = {
             );
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        for (var key in manifest) {</span>
-<span class="cstat-no" title="statement not covered" >            var patterns = [ escPathPattern(key) ];</span>
-<span class="cstat-no" title="statement not covered" >            if (opts.replaceReved) {</span>
-<span class="cstat-no" title="statement not covered" >                patterns.push( escPathPattern( (path.dirname(key) === '.' ? '' : closeDirBySep(path.dirname(key)) ) + path.basename(key, path.extname(key)) )</span>
+<span class="cstat-no" title="statement not covered">        for (var key in manifest) {</span>
+<span class="cstat-no" title="statement not covered">            var patterns = [ escPathPattern(key) ];</span>
+<span class="cstat-no" title="statement not covered">            if (opts.replaceReved) {</span>
+<span class="cstat-no" title="statement not covered">                patterns.push( escPathPattern( (path.dirname(key) === '.' ? '' : closeDirBySep(path.dirname(key)) ) + path.basename(key, path.extname(key)) )</span>
                             + opts.revSuffix
                             + escPathPattern( path.extname(key) )
                         );
             }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >            if ( dirReplacements.length ) {</span>
-<span class="cstat-no" title="statement not covered" >                dirReplacements.forEach(<span class="fstat-no" title="function not covered" >function (dirRule) {</span></span>
-<span class="cstat-no" title="statement not covered" >                    patterns.forEach(<span class="fstat-no" title="function not covered" >function (pattern) {</span></span>
-<span class="cstat-no" title="statement not covered" >                        changes.push({</span>
+<span class="cstat-no" title="statement not covered">            if ( dirReplacements.length ) {</span>
+<span class="cstat-no" title="statement not covered">                dirReplacements.forEach(<span class="fstat-no" title="function not covered">function (dirRule) {</span></span>
+<span class="cstat-no" title="statement not covered">                    patterns.forEach(<span class="fstat-no" title="function not covered">function (pattern) {</span></span>
+<span class="cstat-no" title="statement not covered">                        changes.push({</span>
                             regexp: new RegExp(  dirRule.dirRX + pattern, 'g' ),
                             patternLength: (dirRule.dirRX + pattern).length,
                             replacement: _.isFunction(dirRule.dirRpl)
@@ -614,9 +612,9 @@ var defaults = {
                     });
                 });
             } else {
-<span class="cstat-no" title="statement not covered" >                patterns.forEach(<span class="fstat-no" title="function not covered" >function (pattern) {</span></span>
+<span class="cstat-no" title="statement not covered">                patterns.forEach(<span class="fstat-no" title="function not covered">function (pattern) {</span></span>
                     // without dirReplacements we must leave asset filenames with prefixes in its original state
-<span class="cstat-no" title="statement not covered" >                    changes.push({</span>
+<span class="cstat-no" title="statement not covered">                    changes.push({</span>
                         regexp: new RegExp( '([\/\\\\\'"])' + pattern, 'g' ),
                         patternLength: pattern.length,
                         replacement: '$1' + manifest[key]
@@ -627,33 +625,34 @@ var defaults = {
 &nbsp;
         // Replace longer patterns first
         // e.g. match `script.js.map` before `script.js`
-<span class="cstat-no" title="statement not covered" >        changes.sort(</span>
-<span class="fstat-no" title="function not covered" >            function(a, b) {</span>
-<span class="cstat-no" title="statement not covered" >                return b.patternLength - a.patternLength;</span>
+<span class="cstat-no" title="statement not covered">        changes.sort(</span>
+<span class="fstat-no" title="function not covered">            function(a, b) {</span>
+<span class="cstat-no" title="statement not covered">                return b.patternLength - a.patternLength;</span>
             }
         );
-<span class="cstat-no" title="statement not covered" >        mutables.forEach(<span class="fstat-no" title="function not covered" >function (file){</span></span>
-<span class="cstat-no" title="statement not covered" >            if (!file.isNull()) {</span>
-<span class="cstat-no" title="statement not covered" >                var src = file.contents.toString('utf8');</span>
-<span class="cstat-no" title="statement not covered" >                changes.forEach(<span class="fstat-no" title="function not covered" >function (r) {</span></span>
-<span class="cstat-no" title="statement not covered" >                    src = src.replace(r.regexp, r.replacement);</span>
+<span class="cstat-no" title="statement not covered">        mutables.forEach(<span class="fstat-no" title="function not covered">function (file){</span></span>
+<span class="cstat-no" title="statement not covered">            if (!file.isNull()) {</span>
+<span class="cstat-no" title="statement not covered">                var src = file.contents.toString('utf8');</span>
+<span class="cstat-no" title="statement not covered">                changes.forEach(<span class="fstat-no" title="function not covered">function (r) {</span></span>
+<span class="cstat-no" title="statement not covered">                    src = src.replace(r.regexp, r.replacement);</span>
                 });
-<span class="cstat-no" title="statement not covered" >                file.contents = new Buffer(src);</span>
+<span class="cstat-no" title="statement not covered">                file.contents = new Buffer(src);</span>
             }
-<span class="cstat-no" title="statement not covered" >            this.push(file);</span>
+<span class="cstat-no" title="statement not covered">            this.push(file);</span>
         }, this);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        cb();</span>
+<span class="cstat-no" title="statement not covered">        cb();</span>
     });
 }
 &nbsp;
 module.exports = revCollector;
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 18:54:03 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 18 2017 17:03:39 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
