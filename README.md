@@ -1,7 +1,10 @@
-# test coverage for  [gulp-rev-collector (v1.1.1)](https://github.com/shonny-ua/gulp-rev-collector)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-rev-collector.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-rev-collector) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-rev-collector.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-rev-collector)
+# npmtest-gulp-rev-collector
+
+#### test coverage for  [gulp-rev-collector (v1.1.1)](https://github.com/shonny-ua/gulp-rev-collector)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-rev-collector.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-rev-collector) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-rev-collector.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-rev-collector)
+
 #### Static asset revision data collector from manifests, generated from different streams, and replace their links in html template.
 
-[![NPM](https://nodei.co/npm/gulp-rev-collector.png?downloads=true)](https://www.npmjs.com/package/gulp-rev-collector)
+[![NPM](https://nodei.co/npm/gulp-rev-collector.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-rev-collector)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-gulp-rev-collector/tree/alpha)|
 |--:|:--|
@@ -9,11 +12,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-gulp-rev-collector/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-gulp-rev-collector/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-gulp-rev-collector/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-gulp-rev-collector/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-gulp-rev-collector/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-gulp-rev-collector/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-gulp-rev-collector/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-gulp-rev-collector/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-gulp-rev-collector/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-gulp-rev-collector%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-gulp-rev-collector/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-gulp-rev-collector/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-gulp-rev-collector/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-rev-collector/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-gulp-rev-collector%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-rev-collector/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-gulp-rev-collector/build/test-report.html](https://npmtest.github.io/node-npmtest-gulp-rev-collector/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-gulp-rev-collector/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-gulp-rev-collector/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-gulp-rev-collector/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-rev-collector/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-rev-collector/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-rev-collector/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-gulp-rev-collector/build/screenCapture.npmPackageListing.svg)
 
@@ -27,8 +36,7 @@
 
 {
     "author": {
-        "name": "Oleksandr Ovcharenko",
-        "email": "shonny.ua@gmail.com"
+        "name": "Oleksandr Ovcharenko"
     },
     "bugs": {
         "url": "https://github.com/shonny-ua/gulp-rev-collector/issues"
@@ -73,13 +81,11 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "shonny.ua",
-            "email": "shonny.ua@gmail.com"
+            "name": "shonny.ua"
         }
     ],
     "name": "gulp-rev-collector",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/shonny-ua/gulp-rev-collector.git"
