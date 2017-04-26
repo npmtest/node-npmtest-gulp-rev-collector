@@ -1,6 +1,6 @@
 # npmtest-gulp-rev-collector
 
-#### test coverage for  [gulp-rev-collector (v1.1.1)](https://github.com/shonny-ua/gulp-rev-collector)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-rev-collector.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-rev-collector) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-rev-collector.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-rev-collector)
+#### basic test coverage for  [gulp-rev-collector (v1.1.1)](https://github.com/shonny-ua/gulp-rev-collector)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-rev-collector.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-rev-collector) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-rev-collector.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-rev-collector)
 
 #### Static asset revision data collector from manifests, generated from different streams, and replace their links in html template.
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-gulp-rev-collector/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-gulp-rev-collector/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-gulp-rev-collector/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-gulp-rev-collector/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-gulp-rev-collector/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-gulp-rev-collector/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-gulp-rev-collector/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-gulp-rev-collector/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-gulp-rev-collector/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-gulp-rev-collector/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-gulp-rev-collector/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-gulp-rev-collector/build/coverage.html/index.html)
 
@@ -93,7 +93,8 @@
     "scripts": {
         "test": "mocha"
     },
-    "version": "1.1.1"
+    "version": "1.1.1",
+    "bin": {}
 }
 ```
 
